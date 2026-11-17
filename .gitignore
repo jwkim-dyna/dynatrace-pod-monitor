@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.dt-app/
+/out/
+/prototype-screenshots/
+/app.config.json
+*.log
+.env*
+ui/lang/ko.json

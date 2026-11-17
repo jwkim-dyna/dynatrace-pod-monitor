@@ -1,0 +1,21 @@
+{
+  "$schema": "./.dt-app/app.config.schema.json",
+  "environmentUrl": "https://CUSTOMER.apps.dynatrace.com/",
+  "build": {
+    "ui": {
+      "assets": [ { "glob": "*.json", "input": "ui/lang", "output": "lang" } ]
+    }
+  },
+  "app": {
+    "name": "Pod 상태 모니터링",
+    "version": "0.3.7",
+    "description": "Live Kubernetes Pod health across selectable clusters and namespaces.",
+    "id": "my.pod.monitor.prototype",
+    "scopes": [
+      { "name": "storage:smartscape:read", "comment": "Read Kubernetes clusters, namespaces and Pod status" },
+      { "name": "storage:metrics:read", "comment": "Read selected Pod CPU and memory for the last thirty minutes" },
+      { "name": "storage:buckets:read", "comment": "Read Grail query data" },
+      { "name": "storage:events:read", "comment": "Read recent Kubernetes events for the selected Pod" }
+    ]
+  }
+}
