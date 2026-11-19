@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dynatrace": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@dynatrace-oss/dynatrace-mcp-server@latest"],
+      "env": {
+        "DT_ENVIRONMENT": "${DT_ENVIRONMENT}",
+        "DT_PLATFORM_TOKEN": "${DT_PLATFORM_TOKEN}"
+      }
+    }
+  }
+}
