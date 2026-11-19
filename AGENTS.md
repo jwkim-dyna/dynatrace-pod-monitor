@@ -2,6 +2,18 @@
 
 [Dynatrace App Toolkit 공식 템플릿](https://github.com/Dynatrace/dt-app-templates/blob/main/templates/default/AGENTS.md)을 참고해 이 저장소에 맞게 정리한 지침입니다.
 
+## 언어
+채팅 창에 응답은 한글로 표현
+
+## DTCTL
+MCP 서버와 함께 설치된 DTCTL 사용 가능
+dtctl을 이용하여 실제 DQL 쿼리를 테스트할 수 있음
+
+## Version 관리
+새로 배포할 때마다 app.config.json의 app.version 마지막 자리(patch)부터 먼저 올리되 각 자리의 최종 숫자는 9
+예시: 0.0.0 → 0.0.1 → 0.0.2 ...
+각 작업 단위가 고유 버전으로 추적되도록 하기 위함임
+
 ## 프로젝트 구조
 
 - `ui/main.tsx`는 React 진입점입니다. `ui/app/`에는 상태 보드, Pod 목록, 상세 패널이 있습니다.
